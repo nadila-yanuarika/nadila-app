@@ -22,10 +22,9 @@ export default function Hero() {
 
                     {/* Description */}
                     <p className="mt-10 text-[#7f6a5c] text-xl leading-relaxed max-w-xl">
-                        Mahasiswa D3 Teknologi Informasi Universitas Brawijaya yang
-                        memiliki minat pada Frontend Development dan UI/UX Design.
-                        Saya senang membangun website yang responsif, mudah digunakan,
-                        serta mengutamakan pengalaman pengguna yang baik.
+                        Fresh Graduate D3 Teknologi Informasi Universitas Brawijaya yang
+                        Memiliki minat pada pengembangan web, jaringan komputer dasar, dan pembelajaran teknologi informasi.
+                        Saya senang membangun solusi digital yang mudah digunakan serta terus belajar dan berbagi pengetahuan dengan orang lain.
                     </p>
 
                     {/* Buttons */}
