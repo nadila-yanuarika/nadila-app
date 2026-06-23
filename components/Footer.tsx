@@ -20,7 +20,7 @@ export default function Footer() {
                             </h3>
 
                             <p className="text-[#7a6759] mt-1">
-                                Web Development · Frontend · UI/UX Design
+                               Software Development · Information Systems · Computer Networks
                             </p>
                         </div>
 

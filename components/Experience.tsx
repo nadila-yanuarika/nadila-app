@@ -4,8 +4,9 @@ const experiences = [
         organization: "PT cmlabs Indonesia Digital",
         year: "2025-2026",
         description:
-            "Terlibat dalam pengembangan aplikasi web dan implementasi fitur bersama tim pengembang.",
+            "Berkontribusi dalam pengembangan dan pemeliharaan aplikasi web, implementasi fitur baru, serta kolaborasi dengan tim pengembang untuk meningkatkan kualitas dan performa sistem.",
         tags: ["JavaScript", "TypeScript", "React", "Node.js", "Tailwind CSS"],
+        image: "/experience/intern.png",
     },
 
     {
@@ -13,8 +14,9 @@ const experiences = [
         organization: "YUWARAJA — Faculty Orientation",
         year: "2024",
         description:
-            "Mendukung pelaksanaan layanan kesehatan selama kegiatan orientasi mahasiswa baru.",
+            "Bertanggung jawab mendukung layanan kesehatan dan memastikan kesiapan penanganan peserta selama kegiatan orientasi mahasiswa baru tingkat fakultas.",
         tags: ["Tanggung Jawab", "Kerja Sama Tim", "Kepedulian"],
+        image: "/experience/yuwa.jpeg",
     },
 
     {
@@ -22,8 +24,9 @@ const experiences = [
         organization: "Study Program Orientation",
         year: "2024",
         description:
-            "Mengelola koordinasi peserta dan membantu kelancaran kegiatan orientasi program studi.",
+            "Mengoordinasikan peserta dalam kelompok binaan, memberikan pendampingan, serta memastikan kelancaran pelaksanaan kegiatan orientasi program studi.",
         tags: ["Kepemimpinan", "Koordinasi", "Komunikasi"],
+        image: "/experience/spv.jpeg",
     },
 ];
 
@@ -76,7 +79,7 @@ export default function Experience() {
                                 {/* Card */}
 
                                 <div
-                                    className="flex-1 bg-[#fbf8f4] border border-[#e7ddd1] rounded-[36px] p-10 shadow-[0_10px_30px_rgba(0,0,0,0.03)]"
+                                    className=" flex-1 bg-[#fbf8f4] border border-[#e7ddd1] rounded-[36px] p-10 shadow-[0_10px_30px_rgba(0,0,0,0.03)] hover:-translate-y-1 hover:shadow-[0_20px_40px_rgba(0,0,0,0.06)] transition-all duration-300 "
                                 >
                                     <div className="flex justify-between items-start">
 
@@ -124,6 +127,18 @@ export default function Experience() {
                                         ))}
 
                                     </div>
+
+                                    {
+                                        exp.image && (
+                                            <div className="mt-8">
+                                                <img
+                                                    src={exp.image}
+                                                    alt={exp.title}
+                                                    className="w-full h-100 object-cover rounded-3xl border border-[#e7ddd1]"
+                                                />
+                                            </div>
+                                        )
+                                    }
 
                                 </div>
                             </div>

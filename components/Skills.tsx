@@ -6,65 +6,49 @@ import {
     MessageSquare,
     Lightbulb,
     Clock3,
-    Server
+    Server,
+    Globe,
+    Network
 } from "lucide-react";
+import {
+    SiHtml5,
+    SiCss,
+    SiJavascript,
+    SiPhp,
+    SiMysql,
+    SiReact,
+    SiNodedotjs,
+    SiFigma,
+} from "react-icons/si";
 
-const technicalSkills = [
+const expertise = [
     {
-        name: "HTML",
-        description: "Frontend Structure",
-        level: "Advanced",
+        name: "Software Development",
         icon: Code2,
     },
-
     {
-        name: "CSS",
-        description: "Responsive Styling",
-        level: "Advanced",
-        icon: Palette,
-    },
-
-    {
-        name: "JavaScript",
-        description: "Interactive UI",
-        level: "Intermediate",
-        icon: Code2,
-    },
-
-    {
-        name: "PHP",
-        description: "Backend Development",
-        level: "Intermediate",
-        icon: Code2,
-    },
-
-    {
-        name: "MySQL",
-        description: "Database Management",
-        level: "Intermediate",
+        name: "Information Systems",
         icon: Database,
     },
-
     {
-        name: "React",
-        description: "Component-Based UI",
-        level: "Intermediate",
-        icon: Code2,
-    },
-
-    {
-        name: "Node.js",
-        description: "Backend Development",
-        level: "Intermediate",
+        name: "Computer Networks",
         icon: Server,
     },
-
     {
-        name: "Figma",
-        description: "UI/UX Design",
-        level: "Advanced",
-        icon: Palette,
+        name: "Web Development",
+        icon: Code2,
     },
+];
+
+const techStack = [
+    { icon: SiHtml5, name: "HTML" },
+    { icon: SiCss, name: "CSS" },
+    { icon: SiJavascript, name: "JavaScript" },
+    { icon: SiPhp, name: "PHP" },
+    { icon: SiMysql, name: "MySQL" },
+    { icon: SiReact, name: "React" },
+    { icon: SiNodedotjs, name: "Node.js" },
+    { icon: SiFigma, name: "Figma" },
 ];
 
 const softSkills = [
@@ -107,66 +91,80 @@ export default function Skills() {
                 <h2
                     className="font-(family-name:--font-cormorant) text-[#3f241b] text-[55px] leading-none mt-6"
                 >
-                    Keahlian dan teknologi yang saya gunakan.
+                   Kompetensi dan teknologi yang saya kuasai.
                 </h2>
 
-                <div className="grid lg:grid-cols-[1.35fr_0.95fr] gap-14 mt-20">
+                <div className="flex flex-col lg:flex-row gap-14 mt-20">
 
                     {/* LEFT */}
-                    <div>
+                    <div className="lg:w-3/5">
+                        {/* AREA OF EXPERTISE */}
+                        <div>
+                            <p className="uppercase text-[#8b7768] tracking-widest text-sm mb-8">
+                                Area of Expertise
+                            </p>
 
-                        <p className="uppercase text-[#8b7768] tracking-widest text-sm mb-8">
-                            Technical
-                        </p>
+                            <div className="flex flex-wrap gap-4">
+                                {expertise.map((item) => {
+                                    const Icon = item.icon;
 
-                        <div className="grid md:grid-cols-2 gap-5">
-
-                            {technicalSkills.map((skill) => {
-                                const Icon = skill.icon;
-
-                                return (
-                                    <div
-                                        key={skill.name}
-                                        className=" bg-[#fbf8f4] border border-[#e6dbcf] rounded-4xl p-6 hover:-translate-y-1 transition-all duration-300 "
-                                    >
-                                        <div className="flex items-center gap-4">
-
-                                            <div
-                                                className=" w-12 h-12 rounded-full bg-[#f1e6d8] flex items-center justify-center "
-                                            >
+                                    return (
+                                        <div
+                                            key={item.name}
+                                            className="bg-[#fbf8f4] border border-[#e6dbcf] rounded-4xl p-6"
+                                        >
+                                            <div className="flex items-center gap-4">
                                                 <Icon
-                                                    size={22}
-                                                    className="text-[#4b3427]"
+                                                    className="text-[#8b5e47]"
+                                                    size={24}
                                                 />
-                                            </div>
 
-                                            <div className="flex-1">
-                                                <h3 className="text-[#3f241b] text-xl">
-                                                    {skill.name}
+                                                <h3 className="text-[#3f241b] text-lg">
+                                                    {item.name}
                                                 </h3>
-
-                                                <p className="text-[#8b7768] text-sm mt-1">
-                                                    {skill.description}
-                                                </p>
                                             </div>
-
-                                            <span
-                                                className=" px-3 py-1 rounded-full bg-[#f1e6d8] text-[#8b5e47] text-xs "
-                                            >
-                                                {skill.level}
-                                            </span>
-
                                         </div>
-                                    </div>
-                                );
-                            })}
-
+                                    );
+                                })}
+                            </div>
                         </div>
 
+                        {/* TECH STACK */}
+                        <div className="mt-12">
+
+                            <p className="uppercase text-[#8b7768] tracking-widest text-sm mb-8">
+                                Tech Stack
+                            </p>
+
+                            <div className="overflow-hidden bg-[#fbf8f4] border border-[#e6dbcf] rounded-4xl py-8">
+                                <div className="flex flex-nowrap gap-4 animate-marquee">
+                                    {[...techStack, ...techStack, ...techStack].map((tech, index) => {
+                                        const Icon = tech.icon;
+
+                                        return (
+                                            <div
+                                                key={index}
+                                                className="flex flex-col items-center gap-3 min-w-20"
+                                            >
+                                                <Icon
+                                                    size={42}
+                                                    className="text-[#8b5e47]"
+                                                />
+
+                                                <span className="text-[#3f241b] text-sm whitespace-nowrap">
+                                                    {tech.name}
+                                                </span>
+                                            </div>
+                                        );
+                                    })}
+                                </div>
+                            </div>
+
+                        </div>
                     </div>
 
                     {/* RIGHT */}
-                    <div>
+                    <div className="lg:w-2/5">
                         <p className="uppercase text-[#8b7768] tracking-widest text-sm mb-8">
                             Soft Skills
                         </p>
@@ -207,9 +205,9 @@ export default function Skills() {
                             <h3
                                 className="mt-6 font-(family-name:--font-cormorant) text-[24px] text-[#3f241b] leading-tight"
                             >
-                                Frontend Development,
-                                UI/UX Design,
-                                dan Pengembangan Aplikasi Web.
+                                Information Technology,
+                                Software Development,
+                                dan Digital Solutions.
                             </h3>
 
                         </div>

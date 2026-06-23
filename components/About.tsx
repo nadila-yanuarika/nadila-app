@@ -27,22 +27,22 @@ export default function About() {
                     <div className="space-y-8 text-[#7a6759] text-[20px] leading-relaxed">
 
                         <p>
-                            Mahasiswa D3 Teknologi Informasi Universitas Brawijaya yang memiliki minat pada
-                            Web Development dan UI/UX Design. Saya senang
-                            membangun website yang fungsional, responsif,
-                            dan mudah digunakan.
+                            Fresh Graduate D3 Teknologi Informasi Universitas Brawijaya yang memiliki minat pada
+                            bidang Teknologi Informasi, pengembangan sistem, dan pembelajaran teknologi.
+                            Saya senang mengeksplorasi teknologi baru serta mengembangkan solusi digital
+                            yang mudah digunakan dan bermanfaat.
                         </p>
 
                         <p>
-                            Melalui berbagai proyek dan pengalaman organisasi,
-                            saya terus mengembangkan kemampuan teknis,
-                            komunikasi, serta kerja sama tim.
+                            Melalui pengalaman magang, proyek akademik, dan kegiatan organisasi,
+                            saya terus mengembangkan kemampuan teknis, komunikasi, kepemimpinan,
+                            serta kemampuan berkolaborasi dalam tim.
                         </p>
 
                         <p>
-                            Saya selalu terbuka untuk belajar, berkembang,
-                            dan berkontribusi dalam menciptakan solusi
-                            digital yang bermanfaat.
+                            Saya percaya bahwa teknologi dapat menjadi sarana untuk menciptakan
+                            perubahan positif, sehingga saya selalu berusaha untuk terus belajar,
+                            berkembang, dan berbagi pengetahuan dengan orang lain.
                         </p>
 
                     </div>
@@ -117,20 +117,14 @@ export default function About() {
                         <div className="flex flex-wrap gap-3 mt-12">
 
                             {[
-                                "Web Dev",
-                                "Frontend",
-                                "UI/UX",
-                                "Information Systems",
+                                "Information Technology",
+                                "Software Development",
+                                "Computer Networks",
+                                "Information Systems"
                             ].map((tag) => (
                                 <span
                                     key={tag}
-                                    className="
-                  px-5
-                  py-2
-                  rounded-full
-                  bg-[#f1e6d8]
-                  text-[#5b4335]
-                  "
+                                    className="px-5 py-2 rounded-full bg-[#f1e6d8] text-[#5b4335]"
                                 >
                                     {tag}
                                 </span>

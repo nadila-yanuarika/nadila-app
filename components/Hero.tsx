@@ -83,7 +83,7 @@ export default function Hero() {
                                 </p>
 
                                 <h3 className="text-4xl font-serif italic text-[#3f241b] mt-2">
-                                    Web
+                                    Technology
                                 </h3>
                             </div>
 

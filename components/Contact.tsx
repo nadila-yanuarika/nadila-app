@@ -31,9 +31,10 @@ export default function Contact() {
                     <div>
 
                         <p className="text-[#7a6759] text-[18px] leading-relaxed max-w-2xl">
-                            Terbuka untuk peluang kerja, kolaborasi, maupun posisi
-                            entry-level di bidang Web Development, Frontend Development,
-                            dan UI/UX Design. Saya dapat dihubungi melalui email atau media sosial berikut.
+                            Terbuka untuk peluang kerja dan kolaborasi di bidang
+                            Teknologi Informasi. Saya tertarik pada pengembangan sistem,
+                            teknologi digital, serta pemanfaatan teknologi untuk
+                            menciptakan solusi yang bermanfaat dan berdampak positif.
                         </p>
 
                         <div className="mt-12 space-y-5">
@@ -198,19 +199,20 @@ export default function Contact() {
 
                             <p className="mt-6 text-[#7a6759] text-[15px] text-lg leading-relaxed">
                                 Lulusan D3 Teknologi Informasi Universitas Brawijaya dengan minat
-                                pada pengembangan web, frontend development, dan desain UI/UX.
-                                Terbuka untuk peluang kerja, kolaborasi, maupun proyek yang dapat
-                                memberikan dampak dan pengalaman baru.
+                                pada bidang Teknologi Informasi, pengembangan perangkat lunak,
+                                dan sistem informasi. Terbuka untuk peluang kerja, kolaborasi,
+                                maupun proyek yang mendukung pengembangan kompetensi dan
+                                memberikan manfaat bagi masyarakat.
                             </p>
 
                             <div className="flex flex-wrap gap-3 mt-8">
 
                                 {[
+                                    "Information Technology",
+                                    "Software Development",
                                     "Web Development",
-                                    "Frontend",
-                                    "UI/UX",
-                                    "React",
-                                    "Figma",
+                                    "Information Systems",
+                                    "Computer Networks",
                                 ].map((item) => (
                                     <span
                                         key={item}
