@@ -48,25 +48,25 @@ const projects = [
     },
 
     {
-        category: "COLLABORATION · CMS",
-        title: "Content Management System (CMS)",
+        category: "WEB DEVELOPMENT · PROPERTY",
+        title: "HomeBuy Property Website",
 
         description:
-            "Proyek Content Management System (CMS) yang dikerjakan secara tim selama program magang di cmlabs. Saya berkontribusi dalam pengembangan frontend dan implementasi antarmuka pengguna untuk mendukung kebutuhan pengelolaan konten website.",
+            "Website properti yang dibuat untuk menampilkan berbagai informasi hunian dan membantu pengguna menemukan pilihan rumah yang sesuai. Website dikembangkan menggunakan JavaScript murni, kemudian diintegrasikan ke WordPress untuk mengelola konten.",
 
-        image: "/projects/cms.png",
+        image: "/projects/homebuy.png",
 
-        tech: ["React", "TypeScript", "Node.js", "MySQL", "Tailwind CSS"],
+        tech: ["HTML", "CSS", "JavaScript", "WordPress"],
 
         features: [
-            "Landing page CMS",
-            "Halaman login",
-            "Desain responsif",
-            "Kolaborasi tim",
+            "Daftar pilihan properti",
+            "Detail informasi rumah",
+            "Responsive layout",
+            "Interactive UI",
         ],
 
-        demo: "https://cms-team3.vercel.app",
-        github: "https://github.com/nadila-yanuarika/cms-team3",
+        demo: "http://homebuy-nadila.infinityfreeapp.com",
+        github: "https://github.com/nadila-yanuarika/home-buy",
         reverse: false,
     },
 ];
